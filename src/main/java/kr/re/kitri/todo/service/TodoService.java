@@ -14,26 +14,26 @@ public class TodoService {
     private TodoRepository repository;
 
     public List<Todo> getAllTodos(){
-        return repository.SelectAllTodos();
+        return repository.selectAllTodos();
     }
 
-    /*public Todo getTodos(int id){
-        return repository.SelectTodos(id);
+    public Todo getTodos(int id){
+        return repository.selectTodos(id);
     }
 
     public Todo InsertTodos(){
-        return repository.InsertTodos();
+        return repository.insertTodos();
     }
 
     public String completeTodos(int id){
-        return repository.DoneTodos(id);
+        return repository.doneTodos(id);
     }
 
     public String removeTodos(int id){
-        return repository.DeleteTodos(id);
+        return repository.deleteTodos(id);
     }
 
-    public String SearchTodos(){
-        return repository.SearchTodos();
-    }*/
+    public String findTodos(){
+        return repository.searchTodoList();
+    }
 }
